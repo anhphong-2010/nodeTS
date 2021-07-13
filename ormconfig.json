@@ -1,0 +1,24 @@
+{
+  "type": "mssql",
+  "host": "ANH-PHONG\\DESKTOP",
+  "port": 1433,
+  "database": "TestDB",
+  "username": "sa",
+  "password": "12345",
+  "synchronize": false,
+  "migrationsRun": true,
+  "logging": false,
+  "options": {
+    "cryptoCredentialsDetails": {
+      "minVersion": "TLSv1"
+    }
+  },
+  "entities": ["src/entity/**/*.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
